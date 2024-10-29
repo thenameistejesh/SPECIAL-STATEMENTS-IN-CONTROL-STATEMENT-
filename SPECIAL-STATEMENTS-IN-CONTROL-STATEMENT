@@ -1,0 +1,45 @@
+#w.p.p to validate gmail
+#should not use _ underscore
+#to implement scenario we must use break
+gmail=input("enter gmail id")
+for char in gmail:
+  print(char,end="")
+  if (char == "_"):
+    print("invalid gmail")
+    break
+
+
+
+#w.p.p to validate gmail
+#should not use _ underscore
+#to implement scenario we must use break
+gmail=input("enter gmail id")
+for char in gmail:
+  print(char,end="")
+  if (char == "_"):
+    print("invalid gmail")
+    continue
+
+
+
+'''assigment1:w.p.p using break to stop working money dispensary machine when fake note series detected'''
+list_of_series=[1111,1112,1113,1114,1121,1122,1115,1116]
+#here 1121 and 1122 are fake notes in series.
+fake_notes=[1121,1122]
+for i in list_of_series:
+    if (i == 1121 or i ==1122):
+      print("fake note detected")
+      break
+    print(i)
+
+
+
+'''assigment1:w.p.p using break to stop working money dispensary machine when fake note series detected'''
+list_of_series=[1111,1112,1113,1114,1121,1122,1115,1116]
+#here 1121 and 1122 are fake notes in series.
+fake_notes=[1121,1122]
+for i in list_of_series:
+    if (i == 1121 or i ==1122):
+      print("fake note detected")
+      continue
+    print(i)
